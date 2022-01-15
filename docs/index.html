@@ -7,9 +7,9 @@
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <title>Shop Manual&nbsp;(HONDA MOTOR Co.,Ltd.)</title>
-<script src="./_COM/HONDAESM.JS"></script>
-<script src="./_COM/MESSAGE.JS"></script>
-<script src="./_COM/LANGINFO.JS"></script>
+<script src="./COM/HONDAESM.JS"></script>
+<script src="./COM/MESSAGE.JS"></script>
+<script src="./COM/LANGINFO.JS"></script>
 <script>
 <!--
 if (!CheckEnvironment()) {                                            
@@ -324,9 +324,9 @@ function OnLoad()
                                                                
 function OnUnload()
 {
-  F10.src="./_COM/ESMTITLE.HTML";
-  F11.src="./_COM/ESMSELCT.HTML";
-  F12.src="./_COM/ESMBLANK.HTML";
+  F10.src="./COM/ESMTITLE.HTML";
+  F11.src="./COM/ESMSELCT.HTML";
+  F12.src="./COM/ESMBLANK.HTML";
 }
 
 
@@ -346,10 +346,10 @@ window.onload=OnLoad;
 </noscript>
 </head>
 <frameset id="F01" rows="71,*" frameborder="0" framespacing="0">
-  <frame id="F10" src="./_COM/ESMTITLE.HTML" noresize scrolling="no">
+  <frame id="F10" src="./COM/ESMTITLE.HTML" noresize scrolling="no">
   <frameset id="F02" cols="370,*">
-    <frame id="F11" src="./_COM/ESMSELCT.HTML">
-    <frame id="F12" src="./_COM/ESMBLANK.HTML" onResize="OnResizeProc();">
+    <frame id="F11" src="./COM/ESMSELCT.HTML">
+    <frame id="F12" src="./COM/ESMBLANK.HTML" onResize="OnResizeProc();">
   </frameset>
 </frameset>
 </html>
